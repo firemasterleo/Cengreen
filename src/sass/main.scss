@@ -1,0 +1,21 @@
+* {
+    // width: fit-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    // overflow-y: scroll;
+    // width: 100vw;
+    // width: calc(100vw - 110rem);    
+}
+:root {
+  width: 100%;
+    background-color: rgb(30, 29, 29);
+    color: white;
+    // color: black;
+    overflow-x: hidden; //clip better than hidden, hidden broke the header ishidingheader
+
+}
+
