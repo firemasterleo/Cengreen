@@ -76,7 +76,28 @@
             </div>         
         </div>  
         <div class="section3container">
-            <div class="footer">
+            <div class="section3">
+                <div class="section3veil"></div>
+                <div class="left-section">
+                    <!-- <div class="section3image">
+                        <img src="../assets/fuelpic.jpg" loading="lazy" alt="">        
+                        
+                    </div> -->
+                    <div class="mockupimage">
+                        <img src="../assets/mockupnew.png" loading="lazy" alt="">        
+
+                    </div>
+
+                </div>
+                <div class="right-section">
+                    <h2>The everything app for your car</h2>
+                    <p class="rightsectiontext">Fuel delivery, car wash, servicing and more – just tap and we’ll roll to wherever you are. I mean, who still goes to the petrol station or the garage for vehicle services anymore? It’s 2024 – where CENGREEN comes to you.</p>
+                    <div class="qrcode2">
+                            <img src="../assets/qr (2).png" loading="lazy" alt="">   
+                            <p class="qrtext">scan to download</p>
+                    </div>
+
+                </div>
                
             </div>
         </div>
@@ -355,7 +376,7 @@
             // background: green;
             width: 80rem;
             width: 100%;
-            height: fit-content;
+            // height: 45rem;
             position: relative;
             z-index: 0;
             // top: -7rem;
@@ -548,8 +569,8 @@
                         }
                     }
                     
-                    .carousel-tile:nth-child(1) {
-                    }
+                    // .carousel-tile:nth-child(1) {
+                    // }
                     .carousel-tile:nth-child(6) {
                         background: linear-gradient(65.3deg, rgb(217, 147, 147) 8.4%, rgb(230, 224, 224) 55%);
 
@@ -568,13 +589,166 @@
         }
     }
     .section3container {
-        // border: solid ;
+        // border: solid blue ;
         background-color: rgb(118, 118, 205);
-        background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);                    
-        height: 20rem;
+        // background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);                    
+        height: 60rem;
         width: 100%;
         display: flex;
         overflow: hidden;
+        
+        .section3 {
+            background: radial-gradient(ellipse 25% 30% at 55% 25%, #7cae65, #000000);
+
+            width: 80rem;
+            height: 100%;
+            margin-block: auto auto;
+            position: relative;
+
+            display: flex;
+            margin-inline: auto;
+            // padding-top: 10rem;
+
+            .section3veil {
+                                // border: solid red;
+                                position: absolute;
+                z-index: 1;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.945), /* Least transparent at the top */
+                rgba(0, 0, 0, 0.358)  /* Darker and less transparent at the bottom */
+            );
+            }
+
+            .left-section {
+                // border: solid red;
+                width: 50%;
+                height: 100%;
+                padding-left: 7rem;
+                position: relative;
+                margin-top: 15rem;
+
+                .section3image {
+                    // border: solid red;
+                    width: 31rem;
+                    height: 34rem;
+                    border-radius: 2rem;
+                    position: relative;
+                    // z-index: 1;
+                    // margin-inline: auto;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
+                    .veil {
+                        position: absolute;
+                        top: 0;
+                        // border: solid green;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
+                        background-color: rgba(0, 0, 0, 0.539);
+                    }
+                }
+                .mockupimage {
+                    // border: solid red;
+                width: auto;
+                height: 40rem;
+                position: absolute;
+                top: -8rem;
+                left: 10rem;
+                    z-index: 1;
+                    img {
+
+                        height: 100%;
+                        width: auto;
+                        rotate: -15deg;
+
+                    }
+
+                }
+                
+            }
+            .right-section{
+                // border: solid blue;
+                width: 50%;
+                position: relative;
+                z-index: 1;
+                padding-right: 3rem;
+                padding-top: 5rem;
+                background: linear-gradient(to left, #7cae65, #d1dec7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 15rem;
+
+
+                h2 {
+                                line-height: 60px;
+                                margin-bottom: 16px;
+                                font-weight: 600;
+                                font-size: 50px;
+                                -webkit-text-fill-color: transparent;
+                                
+                            }
+                            .rightsectiontext {
+                                font-size: 19px;
+                                margin-bottom: 1.5rem;
+                                color: #7e848a;
+                                
+                            }
+                            .qrcode2 {
+            border: none;
+            // margin-top: 8.5rem;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 1rem;
+            padding-bottom: 0.5rem;
+            border-radius: 1rem;
+            position: relative;
+            background-color: #232323;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            // margin-inline: auto;
+            transition: all 0.4s ease-out;
+            cursor: pointer;
+
+
+        
+                img {
+                    width: 4.5rem;
+                    height:4.5rem;
+                    background-color: #7cae65;
+                }
+            .qrtext {
+            font-family: "Poppins", serif;
+            font-size: 14px;
+            border: none;
+            // border: solid red;
+            // text-align: center;
+            // padding-block: 2px;
+            }
+        }
+        .qrcode:hover {
+            scale: 114%;
+            transition: all 0.5s ease-out;
+        }
+        
+                
+            }
+
+        }
 
     }
                     
