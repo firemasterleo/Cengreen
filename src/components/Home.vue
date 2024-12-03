@@ -1101,20 +1101,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
 
     question.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
 
       // Close all other FAQ items
-      faqItems.forEach((faq) => {
-        faq.classList.remove("active");
-        faq.querySelector(".faq-answer").style.maxHeight = null;
-      });
+      faqItems.forEach((faq) => faq.classList.remove("active"));
 
       // Toggle the clicked FAQ item
       if (!isActive) {
         item.classList.add("active");
+      }
+    });
+  });
+
+  // Handle resizing for active items
+  window.addEventListener("resize", () => {
+    faqItems.forEach((item) => {
+      if (item.classList.contains("active")) {
+        const answer = item.querySelector(".faq-answer");
         answer.style.maxHeight = answer.scrollHeight + "px";
       }
     });
