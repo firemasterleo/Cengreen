@@ -101,6 +101,121 @@
                
             </div>
         </div>
+
+        <div class="section4container">
+            <div class="section4">
+                <div class="faq-header">
+                    <h2>Questions? Answered.</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>What are CENGREEN's operating hours?</h3>
+                        <svg class="icon" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' width='24' height='24'><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+
+                        </div>
+                        <div class="faq-answer">
+
+                        <h2>Fuel Delivery</h2>
+                        <p>24 hours a day, seven days a week.</p>
+                        <br>
+
+                        <h2>CNG</h2>
+                        <p>From 6am to 3am, seven days a week.</p>
+                        <br>
+
+                        <h2>Battery Service</h2>
+                        <p>From 7am to 12am, seven days a week.</p>
+                        <br>
+
+                        <h2>Engine Oil Change</h2>
+                        <p>From 10am to 8pm, seven days a week.</p>
+                        <br>
+
+                        <h2>Tyre Change</h2>
+                        <p>From 9am to 10pm, seven days a week.</p>
+                        <br>
+
+                        <h2>Customer Care – 800-CENGREEN</h2>
+                        <p>From 8am to midnight, seven days a week.</p>
+                        <br>
+
+
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>Where does CENGREEN deliver to?</h3>
+                        <svg class="icon" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' width='24' height='24'><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+
+                        </div>
+                        <div class="faq-answer">
+                        <p>Fuel can be delivered to vehicles parked outdoors in Lagos, Kano, port-harcourt, Kaduna and Abuja, Boats and personal watercraft can be fuelled at selected Marinas in Nigeria.</p>
+                        <br>
+                        <p>CNG services can be ordered to most locations in Lagos, Kano, port-harcourt, Kaduna and Abuja.</p>
+                        <br>
+                        <p>Engine Oil Change services can be ordered to most locations within Lagos, Kano, port-harcourt, Kaduna and Abuja.</p>
+                        <br>
+
+                        <p>You can track your order using the tracking link sent in your confirmation email.</p>
+                        <br>
+
+                        <p>You can track your order using the tracking link sent in your confirmation email.</p>
+                        <br>
+
+                        <p>You can track your order using the tracking link sent in your confirmation email.</p>
+                        <br>
+
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>How do i manage my vehicles in the CENGREEN app</h3>
+                    
+                            <svg class="icon" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' width='24' height='24'><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+  
+                        </div>
+                        <div class="faq-answer">
+                        <p>Yes, we ship to over 50 countries worldwide. Additional charges may apply.</p>
+                        <br>
+
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Which payment methods do you support?</h3>
+                    
+                            <svg class="icon" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' width='24' height='24'><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+  
+                        </div>
+                        <div class="faq-answer">
+                        <p>Yes, we ship to over 50 countries worldwide. Additional charges may apply.</p>
+                        <br>
+
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>How can i get the most from CENGREEN?</h3>
+                    
+                            <svg class="icon" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' width='24' height='24'><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+  
+                        </div>
+                        <div class="faq-answer">
+                        <p>Yes, we ship to over 50 countries worldwide. Additional charges may apply.</p>
+                        <br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-button">
+                    <button>Go to FAQs</button>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 </template>
@@ -590,7 +705,7 @@
     }
     .section3container {
         // border: solid blue ;
-        background-color: rgb(118, 118, 205);
+        background-color: rgb(0, 0, 0);
         // background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);                    
         height: 60rem;
         width: 100%;
@@ -598,7 +713,7 @@
         overflow: hidden;
         
         .section3 {
-            background: radial-gradient(ellipse 25% 30% at 55% 25%, #7cae65, #000000);
+            background: radial-gradient(ellipse 25% 30% at 55% 30%, #7cae65, #000000);
 
             width: 80rem;
             height: 100%;
@@ -740,7 +855,7 @@
             // padding-block: 2px;
             }
         }
-        .qrcode:hover {
+        .qrcode2:hover {
             scale: 114%;
             transition: all 0.5s ease-out;
         }
@@ -751,10 +866,149 @@
         }
 
     }
+    .section4container {
+        // border: solid blue ;
+        background-color: rgb(0, 0, 0);
+        // background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);                    
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        
+        .section4 {
+            background-color: black;
+            padding-inline: 6rem;
+
+            width: 80rem;
+            height: 100%;
+            margin-block: auto auto;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            margin-inline: auto;
+            // padding-top: 10rem;
+
+            .faq-header {
+                margin-bottom: 2rem;
+                h2 {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+            }
+            .faq-button {
+                margin-inline: auto;
+                margin-top: 4rem;
+
+                button{
+                    padding-block: 0.7rem;
+                    padding-inline: 1.2rem;
+                    border-radius: 1rem;
+                    border: none;
+                    background-color: #232323;
+                    color: #a5a5a5;
+                    cursor: pointer;
+
+
+                }
+                button:hover {
+                    background-color: #3f3f3f;
+
+                }
+            }
+        }
+    }
+
                     
     }
 
-    
+    .faq-container {
+        // border: solid red;
+  width: 100%;
+//   max-width: 600px;
+//   margin: 0 auto;
+transition: all 0.5s ease-in-out;
+
+
+}
+
+.faq-item {
+    border-bottom: 1px solid #3f3f3f;
+    padding: 2rem 0;
+    //   height: fit-content;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+    // border: solid red;
+    max-height: 0;
+    overflow: hidden;
+    // margin-top: 10px;
+    // padding-left: 5px;
+    color: #555;
+    transition: 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    position: relative;
+    // margin-bottom: 4rem;
+    top: 2rem; 
+    // left: 0;
+
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b7b7b7;
+}
+
+.icon {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  fill: white;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px; /* Adjust this to match your content's max height */
+  opacity: 1;
+//   padding-bottom: 2rem;
+
+
+}
+
+.faq-answer {
+    h2 {
+        color: #a5a5a5;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    p {
+        color: #8e8f8f;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+
+    }
+}
+
+.faq-item.active .icon {
+  transform: rotate(180deg);
+  fill: white;
+} 
 
 </style>
 
@@ -842,5 +1096,28 @@ const setActive = (index) => {
   activeIndex.value = index;
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
 
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Close all other FAQ items
+      faqItems.forEach((faq) => {
+        faq.classList.remove("active");
+        faq.querySelector(".faq-answer").style.maxHeight = null;
+      });
+
+      // Toggle the clicked FAQ item
+      if (!isActive) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+});
 </script>
