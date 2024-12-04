@@ -1099,31 +1099,16 @@ const setActive = (index) => {
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const item = entry.target;
-        const question = item.querySelector(".faq-question");
-        const answer = item.querySelector(".faq-answer");
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
 
-        question.addEventListener("click", () => {
-          const isActive = item.classList.contains("active");
-
-          faqItems.forEach((faq) => {
-            faq.classList.remove("active");
-            faq.querySelector(".faq-answer").style.maxHeight = null;
-          });
-
-          if (!isActive) {
-            item.classList.add("active");
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
-        observer.unobserve(item); // Unobserve to avoid multiple bindings
-      }
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+      answer.style.maxHeight = item.classList.contains("active")
+        ? answer.scrollHeight + "px"
+        : null;
     });
   });
-
-  faqItems.forEach((item) => observer.observe(item));
 });
 </script>
