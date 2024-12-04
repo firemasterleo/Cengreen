@@ -1104,6 +1104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const answer = item.querySelector(".faq-answer");
 
     const toggleFAQ = () => {
+      console.log("Clicked FAQ:", question.innerText); // Debug log
       const isActive = item.classList.contains("active");
 
       // Close all other FAQ items
@@ -1116,11 +1117,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isActive) {
         item.classList.add("active");
         answer.style.maxHeight = answer.scrollHeight + "px";
+        console.log("ScrollHeight:", answer.scrollHeight); // Debug scroll height
       }
     };
 
-    question.addEventListener("click", toggleFAQ);
-    question.addEventListener("touchstart", toggleFAQ);
+    [ "touchstart"].forEach((event) => {
+      question.addEventListener(event, toggleFAQ);
+    });
   });
 });
 </script>
