@@ -1099,31 +1099,31 @@ const setActive = (index) => {
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const item = entry.target;
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
 
-    const toggleFAQ = () => {
-      console.log("Clicked FAQ:", question.innerText); // Debug log
-      const isActive = item.classList.contains("active");
+        question.addEventListener("click", () => {
+          const isActive = item.classList.contains("active");
 
-      // Close all other FAQ items
-      faqItems.forEach((faq) => {
-        faq.classList.remove("active");
-        faq.querySelector(".faq-answer").style.maxHeight = null;
-      });
+          faqItems.forEach((faq) => {
+            faq.classList.remove("active");
+            faq.querySelector(".faq-answer").style.maxHeight = null;
+          });
 
-      // Toggle the clicked FAQ item
-      if (!isActive) {
-        item.classList.add("active");
-        answer.style.maxHeight = answer.scrollHeight + "px";
-        console.log("ScrollHeight:", answer.scrollHeight); // Debug scroll height
+          if (!isActive) {
+            item.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+        observer.unobserve(item); // Unobserve to avoid multiple bindings
       }
-    };
-
-    [ "touchstart"].forEach((event) => {
-      question.addEventListener(event, toggleFAQ);
     });
   });
+
+  faqItems.forEach((item) => observer.observe(item));
 });
 </script>
