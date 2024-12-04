@@ -1119,7 +1119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    // question.addEventListener("click", toggleFAQ);
+    question.addEventListener("click", toggleFAQ);
     question.addEventListener("touchstart", toggleFAQ);
   });
 });
